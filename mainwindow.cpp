@@ -831,11 +831,11 @@ void MainWindow::on_remaillage_incremental_clicked()
     FaceHandle f0,f1;
     VertexHandle v0,v1;
 
-    //edgesSplit(&mesh,1.5);
+    edgesSplit(&mesh,1.5);
     //verticesShift(&mesh);
     //getmeshAngleQuality(&mesh);
     //collapsShortEdge(&mesh, (4.0/5.0)*lao, (4.0/3.0)*lao);
-    valenceEgalisation(&mesh);
+    //valenceEgalisation(&mesh);
     mesh.update_normals();
     resetAllColorsAndThickness(&mesh);
     displayMesh(&mesh);
